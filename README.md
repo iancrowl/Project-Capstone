@@ -1,5 +1,5 @@
 # Project-Capstone
-# By Ian Crowl;
+<p> By Ian Crowl; </p>
 
 <h2>Project Overview</h2>
 
