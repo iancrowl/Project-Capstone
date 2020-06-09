@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: capstone-project-cloud-devops
+  name: project-capstone
   labels:
-    app: capstone-project-cloud-devops
+    app: project-capstone
 spec:
   type: LoadBalancer
   selector:
-    app: capstone-project-cloud-devops
+    app: project-capstone
   ports:
     - port: 80
       targetPort: 80
