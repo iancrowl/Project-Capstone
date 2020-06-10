@@ -12,4 +12,4 @@ docker images
 
 # Step 3: 
 # Run app
-docker run -p 80:80 project-capstone-app
+docker run -p 8088:80 project-capstone-app
