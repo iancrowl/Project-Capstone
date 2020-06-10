@@ -12,7 +12,7 @@ dockerpath="iancrowl/project-capstone-app"
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login --username=iancrowl
-docker image tag capstone-app $dockerpath
+docker image tag project-capstone-app $dockerpath
 
 # Step 3:
 # Push image to a docker repository
