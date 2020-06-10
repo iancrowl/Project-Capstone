@@ -18,7 +18,7 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl expose deployment project-capstone-app --type=LoadBalancer --port=80
+kubectl expose deployment project-capstone-app --port=80 --target-port=8000
 
 # Open the service 
 # minikube service project-capstone-app
