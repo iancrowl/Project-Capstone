@@ -18,7 +18,7 @@ pipeline {
          }
          stage('Push Docker Image') {
               steps {
-                  withDockerRegistry([url: "https://hub.docker.com/repository/docker/iancrowl/project-capstone-app", credentialsId: "project-capstone"]) {
+                  withDockerRegistry([url: "https://hub.docker.com/repository/docker/iancrowl/project-capstone-app", credentialsId: "docker-hub"]) {
                       sh "docker tag project-capstone iancrowl/project-capstone"
                       sh 'docker push iancrowl/project-capstone'
                   }
