@@ -18,7 +18,7 @@ pipeline {
          }
          stage('Push Docker Image') {
               steps {
-                  withDockerRegistry([url: "", credentialsId: "docker-hub"]) {
+                  withDockerRegistry([url: "", credentialsId: "project-capstone"]) {
                       sh "docker tag project-capstone iancrowl/project-capstone"
                       sh 'docker push iancrowl/project-capstone'
                   }
@@ -27,7 +27,7 @@ pipeline {
          stage('Deploying') {
               steps{
                   echo 'Deploying to AWS...'
-                  withAWS(credentials: 'aws', region: 'us-east-2') {
+                  withAWS(credentials: 'Jenkins', region: 'us-east-2') {
                       sh "aws eks --region us-east-2 update-kubeconfig --name capstonecluster"
                       sh "kubectl config use-context arn:aws:eks:us-east-2:988212813982:cluster/capstonecluster"
                       sh "kubectl set image deployments/project-capstone project-capstone=icrowl/project-capstone:latest"
