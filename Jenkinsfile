@@ -27,7 +27,7 @@ pipeline {
          stage('Deploying') {
               steps{
                   echo 'Deploying to AWS...'
-                  withAWS(credentials: 'cabbf8ea-ae06-4bc6-8f2c-8049e15771e8', region: 'us-east-2') {
+                  withAWS(credentials: 'aws-creds', region: 'us-east-2') {
                       sh "aws eks --region us-east-2 update-kubeconfig --name capstonecluster"
                       sh "kubectl config use-context arn:aws:eks:us-east-2:988212813982:cluster/capstonecluster"
                       sh "kubectl set image deployments/project-capstone project-capstone=icrowl/project-capstone:latest"
