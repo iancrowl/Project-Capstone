@@ -1,6 +1,6 @@
 aws cloudformation create-stack \
---stack-name $1 \
---template-body file://$2 \
---parameters file://$3 \
+--stack-name project-capstone-nodegroup \
+--template-body file:///home/ubuntu/Project-Capstone/CloudFormation/eks-nodegroup.sh \
+--parameters file:///home/ubuntu/Project-Capstone/CloudFormation/eks-nodegroup-params.json \
 --region us-east-2 \
 --capabilities CAPABILITY_NAMED_IAM
