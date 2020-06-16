@@ -1,6 +1,6 @@
 aws cloudformation create-stack \
---stack-name $1 \
---template-body file://$2 \
---parameters file://$3 \
+--stack-name project-capstone-eks-cluster \
+--template-body file:///home/ubuntu/Project-Capstone/CloudFormation/eks-cluster.yml \
+--parameters file:///home/ubuntu/Project-Capstone/CloudFormation/eks-cluster-params.json \
 --region us-east-2 \
 --capabilities CAPABILITY_NAMED_IAM
