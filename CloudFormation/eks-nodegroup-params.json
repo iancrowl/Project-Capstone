@@ -5,7 +5,7 @@
   },
   {
     "ParameterKey": "KeyPairName",
-    "ParameterValue": "custom-key-pair"
+    "ParameterValue": "Jenkins-key"
   },
   {
     "ParameterKey": "DesiredInstances",
