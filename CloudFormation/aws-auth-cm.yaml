@@ -10,3 +10,8 @@ data:
       groups:
         - system:bootstrappers
         - system:nodes
+  mapUsers: | 
+    - userarn: arn:aws:iam::759288920914:user/udacity1 
+      username: designated_user 
+      groups: 
+        - system:masters
