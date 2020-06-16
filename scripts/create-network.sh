@@ -1,0 +1,6 @@
+aws cloudformation create-stack \
+--stack-name project-capstone-network \
+--template-body file://network.yml \
+--parameters file://network-params.yml \
+--region us-east-2 \
+#--capabilities CAPABILITY_NAMED_IAM
