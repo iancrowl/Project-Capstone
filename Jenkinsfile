@@ -30,8 +30,12 @@ pipeline {
                   withAWS(credentials: 'aws-creds', region: 'us-east-2') {
                       sh "aws eks --region us-east-2 update-kubeconfig --name CapstoneEKS-d5n7ddOdsmOw"
                       sh "kubectl config use-context arn:aws:eks:us-east-2:759288920914:cluster/CapstoneEKS-d5n7ddOdsmOw"
-                      sh "kubectl set image deployments/project-capstone project-capstone=icrowl/project-capstone:latest"
-                      sh "kubectl apply -f deployment/deployment.yml"
+                      //Deployment A
+                      sh "kubectl set image deployments/project-capstone project-capstone=icrowl/project-capstone:a"
+                      sh "kubectl apply -f deployment/deployment-a.yml"
+                      //Deployment B
+                      // sh "kubectl set image deployments/project-capstone project-capstone=icrowl/project-capstone:b"
+                      // sh "kubectl apply -f deployment/deployment-b.yml"
                       sh "kubectl get nodes"
                       sh "kubectl get deployment"
                       sh "kubectl get pod -o wide"
