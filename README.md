@@ -16,8 +16,8 @@
 </ul>
 
 ***
-<p>Using an nginx image and a simple imdex.html file, I applied this to a docker image A and image B.  I then deployed this images to my DockerHub.  I used CloudFormation templates to deploy my network and cluster. I build the Cluster nodes manually. 
-I made an error in my index.html file so that I could show a linting error.  I then corrected the error. I dent deployed image A, took A screen shot. lastly, deployed image B and took a screen shot.  
+<p>Using an nginx image and a simple index.html file, I applied this to a docker image A and image B.  I then deployed this images to my DockerHub.  I used CloudFormation templates to deploy my network and cluster. I build the Cluster nodes manually. 
+I made an error in my index.html file so that I could show a linting error.  I then corrected the error. I then deployed image A followed by taking a screen shot. Lastly, deployed image B followed by taking a screen shot.  
 
 
 <p>url to my Github Repo: https://github.com/iancrowl/Project-Capstone </p>
