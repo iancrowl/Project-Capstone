@@ -1,6 +1,7 @@
 Description: >
   Capstone project for Cloud DevOps Engineering Nanodegree
-  Author - Sabbir Hossain
+  Author - Ian Crowl
+
 
 Parameters:
   EnvironmentName:
