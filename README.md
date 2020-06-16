@@ -2,72 +2,18 @@
 <p> By Ian Crowl; </p>
 
 <h2>Project Overview</h2>
+<p> I cloned the repo from Sabbrir420 at url https://github.com/sabbir420/capstone-project-cloud-devops, but refactored many of the exisiting files to make this project my own.</p>
 
-<p> In this project, I applied the skills and knowledge which was developed throughout the Cloud DevOps Nanodegree program. These include:</p>
+<p> Using the skills achieved from the previous lessons, I was able to crated two docker images, A and B, to deploy my modifications to my index.html file. :</p>
 
 <ul>
-	<li>Working in AWS</li>
-	<li>Using Jenkins to implement Continuous Integration and Continuous Deployment</li>
-	<li>Building pipelines</li>
-	<li>Working with Ansible and CloudFormation to deploy clusters</li>
-	<li>Building Kubernetes clusters</li>
-	<li>Building Docker containers in pipelines</li>
+	<li>Using AWS cli and kubectl cli</li>
+	<li>Using Jenkins to implement A Deployment A and Deployment B with Jenkins pipelines</li>
+	<li>Used CloudFormation to deploy the Kubernetes cluster in EKS</li>
+	<li>Built the Clustergroup Manually</li>
+	<li>building a docker image locally to test</li>
 </ul>
 
 ***
-
-<p>I developed a CI/CD pipeline for microservices applications with rolling deployment. I developed Continuous Integration steps, such as typographical checking (aka “linting”). I also developed Contiguous Deployment steps. These includes:</p>
-
-<ul>
-	<li>Pushing the built Docker containers to the Docker repository</li>
-	<li>Deploying these Docker containers to a small Kubernetes cluster. For Kubernetes cluster I used AWS EKS. To deploy my Kubernetes cluster using Cloudformation. I ran these from Jenkins as an independent pipeline.</li>
-</ul>
-
-***
-
-<h2>Environment Setup</h2>
-
-<ul>
-  <li>Create a <code>Makefile</code></li>
-  <li>Create a <code>Dockerfile</code></li>
-  <li>Create a <code>Jenkinsfile</code> including all the necessary steps</li>
-  <li>Create CloudFormation Script using <code>create-stack.sh</code> command</li>
-  <li>Install Jenkins and all the necessary plugins in the EC2 Instance</li>
-</ul>
-
-<h2>Linting App</h2>
-
-<ul>
-  <li>Run <code>make lint</code> to lint the app locally</li>
-</ul>
-
-<h2>Running App</h2>
-
-<ul>
-  <li>Run Docker: <code>./run_docker.sh</code></li>
-  <li>Run Kubernetes: <code>./run_kubernetes.sh</code></li>
-</ul>
-
-<h2>Uploading to the Docker Hub</h2>
-
-<ul>
-  <li>Run <code>./upload_docker.sh</code> to upload the api to the Docker Hub</li>
-</ul>
-
-<h2>Deploying App to AWS</h2>
-
-<pre>
-	<code>
-  		aws eks --region us-west-2 update-kubeconfig --name EKS-Name
-  		kubectl apply -f aws/aws-auth-cm.yaml
-  		kubectl apply -f deployment/deployment.yml
-  		kubectl get nodes
-  		kubectl get pods -o wide
-	</code>
-</pre>
-
-<h2>Cleaning App</h2>
-
-<ul>
-  <li>Run <code>docker system prune</code> to clean up </li>
-</ul>
+<p>Using an nginx image and a simple imdex.html file, I applied this to a docker image A and image B.  I then deployed this images to my DockerHub.  I used CloudFormation templates to deploy my network and cluster. I build the Cluster nodes manually. 
+I made an error in my index.html file so that I could show a linting error.  I then corrected the error. I dent deployed image A, took A screen shot. lastly, deployed image B and took a screen shot.  
