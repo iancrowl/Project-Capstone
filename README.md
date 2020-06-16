@@ -2,6 +2,7 @@
 <p> By Ian Crowl; </p>
 
 <h2>Project Overview</h2>
+
 <p> I cloned the repo from Sabbrir420 at url https://github.com/sabbir420/capstone-project-cloud-devops, but refactored many of the exisiting files to make this project my own.</p>
 
 <p> Using the skills achieved from the previous lessons, I was able to crated two docker images, A and B, to deploy my modifications to my index.html file. :</p>
