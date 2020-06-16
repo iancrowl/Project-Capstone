@@ -5,14 +5,17 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="iancrowl/project-capstone-app"
+##Image A
+dockerpath="iancrowl/project-capstone:a"
+##Image B
+#dockerpath="iancrowl/project-capstone:b"
 
 
 # Step 2:  
-# Authenticate & tag
+# Authenticate
 echo "Docker ID and Image: $dockerpath"
 docker login --username=iancrowl
-docker image tag project-capstone-app $dockerpath
+
 
 # Step 3:
 # Push image to a docker repository

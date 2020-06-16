@@ -4,8 +4,11 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t iancrowl/project-capstone-a .
-#docker build -t iancrowl/project-capstone-b .
+##Image A
+docker build -tag iancrowl/project-capstone-a .
+
+##Image B
+#docker build -tag iancrowl/project-capstone-b .
 
 # Step 2: 
 # List docker images
