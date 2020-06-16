@@ -21,7 +21,7 @@ spec:
         app: project-capstone
     spec:
       containers:
-        - image: iancrowl/project-capstone
+        - image: iancrowl/project-capstone:a
           imagePullPolicy: Always
           name: project-capstone
           ports:
